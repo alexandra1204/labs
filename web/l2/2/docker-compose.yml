@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./code1:/usr/share/nginx/html/site1
+      - ./code2:/usr/share/nginx/html/site2
+      - ./nginx/conf.d:/etc/nginx/conf.d
