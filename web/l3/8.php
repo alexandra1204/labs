@@ -32,4 +32,3 @@ function sumDigits($num) {
     return ($sum > 9) ? sumDigits($sum) : $sum;
 }
 echo sumDigits(12345);
-?>
